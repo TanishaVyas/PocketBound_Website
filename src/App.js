@@ -1,8 +1,8 @@
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import VrFeaturesPage from "./components/features";
 import Hero from "./components/hero";
-<<<<<<< Updated upstream
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Terms from "./components/Terms";
@@ -13,22 +13,12 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <VrFeaturesPage />
       <Contact />
       <Terms />
       <ScrollToTopButton />
     </div>
   );
-=======
-import Features from "./components/features";
-
-function App() {
-  return<div>
-<Hero/>
-<About/>
-<Features/>
-
-  </div> ;
->>>>>>> Stashed changes
 }
 
 export default App;

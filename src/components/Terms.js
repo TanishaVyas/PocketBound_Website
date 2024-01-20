@@ -22,7 +22,7 @@ function Terms() {
         margin: 0,
         padding: "10px",
         backgroundColor: "#180F22",
-        marginBottom: "10",
+        marginBottom: "",
       }}
     >
       <Box sx={{ marginTop: "auto" }}>
@@ -64,21 +64,10 @@ function Terms() {
           <Typography id="modal-description" sx={{ mt: 2 }}>
             <Typography paragraph>
               The following terms and conditions govern your use of the
-              physiotherapy and rehabilitation device ("Physio-mize"). By using
-              the Device, you agree to these terms and conditions.
+              PocketBound. By using the Device, you agree to these terms and
+              conditions.
             </Typography>
             <ul>
-              <li>
-                The Project is provided "as is" without any warranties, express
-                or implied. Team PocketBound makes no representations or
-                warranties regarding the accuracy, completeness, or reliability
-                of the Project.
-              </li>
-              <li>
-                Team PocketBound and its members shall not be liable for any
-                direct, indirect, incidental, special, or consequential damages
-                resulting from the use or inability to use the Project.
-              </li>
               <li>
                 This device is an engineering sample and not a fully finished
                 product.
@@ -91,10 +80,17 @@ function Terms() {
                 The creators won't be responsible for any misuse/mishap of the
                 project.
               </li>
+              <li>
+                Team PocketBound reserves the right to terminate access to the
+                Project at its discretion, without notice, for any reason,
+                including but not limited to a breach of these terms
+              </li>
+              <li></li>
             </ul>
             <Typography>
-              By using the Project, you acknowledge that you have read,
-              understood, and agreed to these terms and conditions.
+              Please read these terms and conditions carefully before using the
+              Device. If you do not agree with any of these terms, do not use
+              the Device.
             </Typography>
           </Typography>
           <Button onClick={handleClose}>Close</Button>

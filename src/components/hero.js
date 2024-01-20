@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import physioImage from "../Images/hero.png";
+import physioImage from "../Images/hero3.png";
 
 const Cover = () => {
   const getInitialSize = () => {
@@ -45,7 +45,6 @@ const Cover = () => {
     margin: 0,
     paddingBottom: window.innerWidth < 600 ? "20vw" : "7vw",
     paddingTop: window.innerWidth < 600 ? "20vw" : "7vw",
-
   };
 
   const imageContentStyle = {
@@ -73,11 +72,11 @@ const Cover = () => {
     height: "100%",
     padding: "0px",
     color: "white",
-    '@media (orientation: portrait)': {
-      fontSize: 'new value for portrait orientation',
+    "@media (orientation: portrait)": {
+      fontSize: "new value for portrait orientation",
     },
-    '@media (orientation: landscape)': {
-      fontSize: 'new value for landscape orientation',
+    "@media (orientation: landscape)": {
+      fontSize: "new value for landscape orientation",
     },
   };
 
@@ -93,17 +92,30 @@ const Cover = () => {
   return (
     <Box sx={{}} id="home" style={{ height: "100%" }}>
       <div style={containerStyle}>
-        <Grid container spacing={"0.5vw"} sx={{ flexDirection: { xs: 'column', md: 'row' } }}>
+        <Grid
+          container
+          spacing={"0.5vw"}
+          sx={{ flexDirection: { xs: "column", md: "row" } }}
+        >
           <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
             <div className="text-content">
               <p style={physioMizeStyle}>
                 <b>PocketBound</b>
               </p>
               <div className="text-content">
-                <p style={textStyle}>Unleash Your Reality, Anytime, Anywhere!</p>
+                <p style={textStyle}>
+                  Unleash Your Reality, Anytime, Anywhere!
+                </p>
               </div>
-              <a href="#ures" style={{ textDecoration: 'none' }}>
-                <Stack direction="row" spacing={2} sx={{ marginLeft: window.innerWidth < 600 ? "30vw" : "17vw", marginTop: window.innerWidth < 600 ? "13vw" : "5vw" }}>
+              <a href="#ures" style={{ textDecoration: "none" }}>
+                <Stack
+                  direction="row"
+                  spacing={2}
+                  sx={{
+                    marginLeft: window.innerWidth < 600 ? "30vw" : "17vw",
+                    marginTop: window.innerWidth < 600 ? "13vw" : "5vw",
+                  }}
+                >
                   <Button
                     variant="contained"
                     endIcon={<ArrowForwardIcon />}
@@ -112,7 +124,7 @@ const Cover = () => {
                       color: "black",
                       fontSize: window.innerWidth < 600 ? "1em" : "1.5em",
                       padding: window.innerWidth < 600 ? "1vw" : "2vw",
-                      borderRadius: "10px"
+                      borderRadius: "10px",
                     }}
                   >
                     Get Started
