@@ -28,7 +28,7 @@ const About = () => {
   }, []);
 
   return (
-    <Paper id="about" style={{ backgroundColor: "#241b2d", padding: "16px" }}>
+    <Paper id="about" style={{ backgroundColor: "#180F22", padding: "16px" }}>
       <div
         style={{
           display: "flex",
@@ -44,7 +44,14 @@ const About = () => {
         >
           <img src={imageUrl} style={{ maxWidth: "100%", height: "auto" }} />
         </div>
-        <div style={{ flex: "1", padding: "10px", flexDirection: "column" }}>
+        <div
+          style={{
+            flex: "1",
+            padding: "10px",
+            flexDirection: "column",
+            backgroundColor:"#180F22", // Background color for the text container
+          }}
+        >
           <Typography
             variant="h5"
             style={{

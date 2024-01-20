@@ -91,6 +91,7 @@ const Cover = () => {
 
   return (
     <Box sx={{}} id="home" style={{ height: "100%" }}>
+        
       <div style={containerStyle}>
         <Grid
           container
