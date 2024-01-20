@@ -96,7 +96,7 @@ const ParticlesComponent = () => {
                                 value: 0.5,
                             },
                             rate: {
-                                value: 5,
+                                value: 2,
                             },
                             sizeOffset: true,
                         },
