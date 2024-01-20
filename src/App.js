@@ -17,8 +17,10 @@ function App() {
 
       {/* Navbar component */}
       <Navbar />
+      <div>
       <ParticlesComponent />
       <Hero />
+      </div>
       <About />
       <VrFeaturesPage />
       <Demo />
