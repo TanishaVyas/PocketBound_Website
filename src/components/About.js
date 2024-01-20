@@ -28,7 +28,7 @@ const About = () => {
   }, []);
 
   return (
-    <Paper style={{ backgroundColor: "#241b2d", padding: "16px" }}>
+    <Paper id="about" style={{ backgroundColor: "#241b2d", padding: "16px" }}>
       <div
         style={{
           display: "flex",
@@ -48,7 +48,7 @@ const About = () => {
           <Typography
             variant="h5"
             style={{
-              color: "#6492ff",
+              color: "#6942ff",
               marginBottom: "16px",
               fontSize: screenSize,
             }}
