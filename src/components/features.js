@@ -134,7 +134,7 @@ const VrFeaturesPage = () => {
               height: "18rem",
               boxSizing: "border-box",
               position: "relative",
-              backgroundColor: "white",
+              backgroundColor: "rgba(255, 255, 255, 0.8)", // Decreased opacity
               justifyContent: "center", // Center content vertically
               textAlign: "center", // Center text horizontally
             }}
