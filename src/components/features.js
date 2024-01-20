@@ -96,7 +96,7 @@ const VrFeaturesPage = () => {
 
   return (
     <div
-      id="features"
+      id="feature"
       style={{
         display: "flex",
         flexWrap: "wrap",
