@@ -65,20 +65,46 @@ function Navbar() {
             {/* Your existing desktop navigation buttons */}
 
             <Button>
-              <Link
-                to="home"
-                smooth={true}
-                duration={500}
-                offset={-70} // Adjust the offset as needed
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
               >
-                <Typography
-                  variant="h6"
-                  sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
-                >
-                  Home
-                </Typography>
-              </Link>
+                Home
+              </Typography>
             </Button>
+            <Button href="#about">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
+              >
+                About
+              </Typography>
+            </Button>
+            <Button href="#features">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
+              >
+                Features
+              </Typography>
+            </Button>
+            <Button href="#demo">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
+              >
+                demo
+              </Typography>
+            </Button>
+            <Button href="#contact">
+              <Typography
+                variant="h6"
+                sx={{ fontSize: { xs: "16px", md: "20px" }, color: "white" }}
+              >
+                contact
+              </Typography>
+            </Button>
+
             {/* Add other desktop buttons as needed */}
           </Box>
         </Toolbar>

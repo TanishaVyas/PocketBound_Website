@@ -2,6 +2,7 @@
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Demo from "./components/Demo";
 import VrFeaturesPage from "./components/features";
 import Hero from "./components/hero";
 import Navbar from "./components/Navbar";
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <About />
       <VrFeaturesPage />
+      <Demo />
       <Contact />
       <Terms />
       <ScrollToTopButton />

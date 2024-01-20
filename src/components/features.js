@@ -33,6 +33,7 @@ const VrFeaturesPage = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const features = [
     {
       title: "Game Engine Software",
@@ -68,6 +69,7 @@ const VrFeaturesPage = () => {
 
   return (
     <div
+      id="features"
       style={{
         display: "flex",
         flexWrap: "wrap",
@@ -82,7 +84,7 @@ const VrFeaturesPage = () => {
           style={{
             color: "#6942ff",
             marginBottom: "16px",
-            fontSize: "2rem",
+            fontSize: "60px",
           }}
         >
           FEATURES
@@ -111,17 +113,19 @@ const VrFeaturesPage = () => {
               padding: "0",
               cursor: "pointer",
               width: window.innerWidth < 600 ? "45%" : "20%",
-              height: "25rem",
+              height: "18rem",
               boxSizing: "border-box",
               position: "relative",
               backgroundColor: "white",
+              justifyContent: "center", // Center content vertically
+              textAlign: "center", // Center text horizontally
             }}
           >
             <img
               src={feature.image}
               alt="Feature Image"
               style={{
-                maxwidth: "45%",
+                maxWidth: "45%",
                 maxHeight: "40%",
                 borderRadius: "10px 10px 0 0",
                 alignSelf: "center",
