@@ -29,7 +29,16 @@ function Terms() {
         <Button
           variant="outlined"
           onClick={handleOpen}
-          sx={{ p: "8px 16px", m: 0 }}
+          sx={{
+            p: "8px 16px",
+            m: 0,
+            color: "#180F22",
+            borderColor: "#180F22",
+            backgroundColor: "#34eeea",
+            "&:hover": {
+              backgroundColor: "#34eeea", // Hover color
+            },
+          }}
         >
           Open Terms and Conditions
         </Button>
@@ -58,10 +67,10 @@ function Terms() {
             },
           }}
         >
-          <Typography id="modal-title" variant="h6" component="h2">
+          <Typography id="modal-title" variant="h6" component="h2" sx={{ color: "black" }}>
             Terms and Conditions
           </Typography>
-          <Typography id="modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-description" sx={{ mt: 2, color: "black" }}>
             <Typography paragraph>
               The following terms and conditions govern your use of the
               PocketBound. By using the Device, you agree to these terms and
@@ -93,7 +102,9 @@ function Terms() {
               the Device.
             </Typography>
           </Typography>
-          <Button onClick={handleClose}>Close</Button>
+          <Button onClick={handleClose} sx={{ color: "red", borderColor: "#fff" }}>
+            Close
+          </Button>
         </Box>
       </Modal>
     </Box>
