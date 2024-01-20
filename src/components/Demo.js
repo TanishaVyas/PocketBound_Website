@@ -4,7 +4,7 @@ const Demo = () => {
   const youtubeVideoLink1 = "https://youtu.be/kQLBmA0-HrQ?si=vpyVVwWFqaHa2WLp";
 
   const [fontSize, setFontSize] = useState(
-    window.innerWidth < 600 ? "4vw" : "2.5vw"
+    window.innerWidth < 600 ? "9vw" : "2.5vw"
   );
   const [marginBottom, setMarginBottom] = useState(
     window.innerWidth < 600 ? "20px" : "35px"
@@ -60,7 +60,7 @@ const Demo = () => {
 
   const videoInfoStyle = {
     flex: 1,
-    fontSize: window.innerWidth < 600 ? "3vw" : "1.5vw",
+    fontSize: window.innerWidth < 600 ? "3vw" : "1.2vw",
     marginLeft: "10px",
     marginRight: window.innerWidth < 600 ? "0px" : "2vw",
     color: "#ffffff",

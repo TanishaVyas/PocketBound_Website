@@ -9,7 +9,7 @@ import { Typography } from "@mui/material";
 
 const VrFeaturesPage = () => {
   const [fontSize, setFontSize] = useState(
-    window.innerWidth < 600 ? "4vw" : "2.5vw"
+    window.innerWidth < 600 ? "9vw" : "2.5vw"
   );
   const [marginBottom, setMarginBottom] = useState(
     window.innerWidth < 600 ? "20px" : "35px"
