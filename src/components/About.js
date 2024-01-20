@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Paper, Typography } from "@mui/material";
-import imageUrl from "..//Images//Temp.jpg";
+import imageUrl from "..//Images//page2.png";
 
 const About = () => {
   const [fontSize, setFontSize] = useState(
