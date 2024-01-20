@@ -91,7 +91,6 @@ const Cover = () => {
 
   return (
     <Box sx={{}} id="home" style={{ height: "100%" }}>
-        
       <div style={containerStyle}>
         <Grid
           container
@@ -121,10 +120,10 @@ const Cover = () => {
                     variant="contained"
                     endIcon={<ArrowForwardIcon />}
                     sx={{
-                      backgroundColor: "#ffffe0",
-                      color: "black",
+                      backgroundColor: "#34EEEA",
+                      color: "#180F22",
                       fontSize: window.innerWidth < 600 ? "1em" : "1.5em",
-                      padding: window.innerWidth < 600 ? "1vw" : "2vw",
+                      padding: window.innerWidth < 600 ? "1vw" : "1vw",
                       borderRadius: "10px",
                     }}
                   >

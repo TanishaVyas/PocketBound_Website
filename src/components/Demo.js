@@ -26,7 +26,7 @@ const Demo = () => {
 
   const wrapperStyle = {
     display: "flex",
-    backgroundColor: "#241b2d",
+    backgroundColor: "#180F22",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",

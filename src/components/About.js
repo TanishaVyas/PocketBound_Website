@@ -3,6 +3,27 @@ import { Paper, Typography } from "@mui/material";
 import imageUrl from "..//Images//Temp.jpg";
 
 const About = () => {
+  const [fontSize, setFontSize] = useState(
+    window.innerWidth < 600 ? "4vw" : "2.5vw"
+  );
+  const [marginBottom, setMarginBottom] = useState(
+    window.innerWidth < 600 ? "20px" : "35px"
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setFontSize(window.innerWidth < 600 ? "4vw" : "2.5vw");
+      setMarginBottom(window.innerWidth < 600 ? "20px" : "35px");
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [screenSize, setScreenSize] = useState("3.5rem");
 
   useEffect(() => {
@@ -27,6 +48,13 @@ const About = () => {
     };
   }, []);
 
+  const pageTitleStyle = {
+    color: "#6942ff",
+    textAlign: "center",
+    fontSize: fontSize,
+    margin: "0",
+  };
+
   return (
     <Paper id="about" style={{ backgroundColor: "#180F22", padding: "16px" }}>
       <div
@@ -49,19 +77,10 @@ const About = () => {
             flex: "1",
             padding: "10px",
             flexDirection: "column",
-            backgroundColor:"#180F22", // Background color for the text container
+            backgroundColor: "#180F22", // Background color for the text container
           }}
         >
-          <Typography
-            variant="h5"
-            style={{
-              color: "#6942ff",
-              marginBottom: "16px",
-              fontSize: screenSize,
-            }}
-          >
-            About the Project
-          </Typography>
+          <h2 style={pageTitleStyle}>ABOUT POCKETBOUND</h2>
           <Typography variant="body1" style={{ color: "#fff" }}>
             PocketBound transforms 3D games into mobile VR experiences, tackling
             accessibility and affordability challenges. With a mobile-centric

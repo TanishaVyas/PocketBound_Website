@@ -8,6 +8,27 @@ import img6 from "../Images/6.png";
 import { Typography } from "@mui/material";
 
 const VrFeaturesPage = () => {
+  const [fontSize, setFontSize] = useState(
+    window.innerWidth < 600 ? "4vw" : "2.5vw"
+  );
+  const [marginBottom, setMarginBottom] = useState(
+    window.innerWidth < 600 ? "20px" : "35px"
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setFontSize(window.innerWidth < 600 ? "4vw" : "2.5vw");
+      setMarginBottom(window.innerWidth < 600 ? "20px" : "35px");
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [showDetails, setShowDetails] = useState({});
 
   const toggleDetails = (feature) => {
@@ -34,6 +55,12 @@ const VrFeaturesPage = () => {
     };
   }, []);
 
+  const pageTitleStyle = {
+    color: "#6942ff",
+    textAlign: "center",
+    fontSize: fontSize,
+    margin: "0",
+  };
   const features = [
     {
       title: "Game Engine Software",
@@ -79,16 +106,7 @@ const VrFeaturesPage = () => {
       }}
     >
       <div>
-        <Typography
-          variant="h5"
-          style={{
-            color: "#6942ff",
-            marginBottom: "16px",
-            fontSize: "60px",
-          }}
-        >
-          FEATURES
-        </Typography>
+        <h2 style={pageTitleStyle}>FEATURES</h2>
       </div>
       <div
         style={{
