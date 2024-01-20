@@ -36,7 +36,7 @@ const Demo = () => {
   const pageTitleStyle = {
     color: "#6942ff",
     textAlign: "center",
-    fontSize: fontSize,
+    fontSize: window.innerWidth < 600 ? "7vw" : "2.5vw",
     margin: "0",
   };
 

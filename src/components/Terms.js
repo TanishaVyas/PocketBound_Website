@@ -67,7 +67,12 @@ function Terms() {
             },
           }}
         >
-          <Typography id="modal-title" variant="h6" component="h2" sx={{ color: "black" }}>
+          <Typography
+            id="modal-title"
+            variant="h6"
+            component="h2"
+            sx={{ color: "black" }}
+          >
             Terms and Conditions
           </Typography>
           <Typography id="modal-description" sx={{ mt: 2, color: "black" }}>
@@ -94,7 +99,6 @@ function Terms() {
                 Project at its discretion, without notice, for any reason,
                 including but not limited to a breach of these terms
               </li>
-              <li></li>
             </ul>
             <Typography>
               Please read these terms and conditions carefully before using the
@@ -102,7 +106,10 @@ function Terms() {
               the Device.
             </Typography>
           </Typography>
-          <Button onClick={handleClose} sx={{ color: "red", borderColor: "#fff" }}>
+          <Button
+            onClick={handleClose}
+            sx={{ color: "red", borderColor: "#fff" }}
+          >
             Close
           </Button>
         </Box>

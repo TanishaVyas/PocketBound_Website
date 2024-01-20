@@ -58,6 +58,7 @@ const About = () => {
   return (
     <Paper id="about" style={{ backgroundColor: "#180F22", padding: "16px" }}>
       <div
+        id="start"
         style={{
           display: "flex",
           flexDirection: screenSize === "2rem" ? "column" : "row",

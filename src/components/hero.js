@@ -117,6 +117,7 @@ const Cover = () => {
                   }}
                 >
                   <Button
+                    href="#start"
                     variant="contained"
                     endIcon={<ArrowForwardIcon />}
                     sx={{

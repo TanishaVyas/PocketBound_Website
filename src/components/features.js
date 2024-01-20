@@ -58,7 +58,7 @@ const VrFeaturesPage = () => {
   const pageTitleStyle = {
     color: "#6942ff",
     textAlign: "center",
-    fontSize: fontSize,
+    fontSize: window.innerWidth < 600 ? "7vw" : "2.5vw",
     margin: "0",
   };
   const features = [
@@ -134,7 +134,7 @@ const VrFeaturesPage = () => {
               height: "18rem",
               boxSizing: "border-box",
               position: "relative",
-              backgroundColor: "rgba(255, 255, 255, 0.8)", // Decreased opacity
+              backgroundColor: "white",
               justifyContent: "center", // Center content vertically
               textAlign: "center", // Center text horizontally
             }}

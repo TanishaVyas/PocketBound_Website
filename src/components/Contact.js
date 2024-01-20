@@ -85,7 +85,7 @@ function Contact() {
               <Typography variant="subtitle1" style={{ color: "white" }}>
                 <b>Phone</b>
               </Typography>
-              <Typography style={{ color: "white" }}>+91 9348243932</Typography>
+              <Typography style={{ color: "white" }}>+91 9595915191</Typography>
             </div>
           </Grid>
           <Grid item xs={12} sm={4}>
