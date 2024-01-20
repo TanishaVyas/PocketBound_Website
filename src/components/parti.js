@@ -22,7 +22,7 @@ const ParticlesComponent = () => {
             options={{
                 background: {
                     color: {
-                        value: "transparent", // Set the background color to your desired color
+                        value: "transparent",
                     },
                 },
                 fpsLimit: 15,
@@ -101,10 +101,16 @@ const ParticlesComponent = () => {
                             sizeOffset: true,
                         },
                     },
+                    life: {
+                        count: 0,
+                        duration: {
+                            value: 3,
+                        },
+                    },
                 },
                 detectRetina: true,
             }}
-            style={{ background: 'transparent' }} // Set the container background as transparent
+            style={{ background: 'transparent' }}
         />
     );
 };
