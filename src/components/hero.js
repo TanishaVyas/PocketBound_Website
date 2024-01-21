@@ -107,13 +107,21 @@ const Cover = () => {
                   Unleash Your Reality, Anytime, Anywhere!
                 </p>
               </div>
-              <a href="#ures" style={{ textDecoration: "none" }}>
+              <a
+                href="#ures"
+                style={{
+                  justifycontent: "center",
+                  alignItems: "center",
+                  textDecoration: "none",
+                }}
+              >
                 <Stack
                   direction="row"
                   spacing={2}
                   sx={{
                     marginLeft: window.innerWidth < 600 ? "30vw" : "17vw",
                     marginTop: window.innerWidth < 600 ? "13vw" : "5vw",
+                    textAlign: "center", // Center the button
                   }}
                 >
                   <Button
@@ -126,6 +134,8 @@ const Cover = () => {
                       fontSize: window.innerWidth < 600 ? "1em" : "1.5em",
                       padding: window.innerWidth < 600 ? "1vw" : "1vw",
                       borderRadius: "10px",
+                      justifycontent: "center",
+                      alignItems: "center",
                     }}
                   >
                     Get Started

@@ -60,7 +60,7 @@ const Demo = () => {
 
   const videoInfoStyle = {
     flex: 1,
-    fontSize: window.innerWidth < 600 ? "3vw" : "1.2vw",
+    fontSize: window.innerWidth < 600 ? "3vw" : "1.5vw",
     marginLeft: "10px",
     marginRight: window.innerWidth < 600 ? "0px" : "2vw",
     color: "#ffffff",

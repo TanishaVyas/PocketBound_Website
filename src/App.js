@@ -13,13 +13,12 @@ import ParticlesComponent from "./components/parti";
 // Main App component
 function App() {
   return (
-    <div>
-
+    <div style={{ backgroundColor: "#180F22" }}>
       {/* Navbar component */}
       <Navbar />
       <div>
-      <ParticlesComponent />
-      <Hero />
+        <ParticlesComponent />
+        <Hero />
       </div>
       <About />
       <VrFeaturesPage />
